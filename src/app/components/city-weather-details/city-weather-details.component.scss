@@ -32,6 +32,11 @@
       }
       p {
         margin-bottom: 5px;
+        &.heading {
+          background: #c6cfd2;
+          padding-left: 10px;
+          margin-bottom: 15px;
+        }
       }
     }
   }

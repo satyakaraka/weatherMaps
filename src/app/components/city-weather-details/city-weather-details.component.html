@@ -8,7 +8,7 @@
       <div class="weather-items" *ngIf="fiveDaysWeatherDetails.length">
         <div *ngFor="let details of fiveDaysWeatherDetails, let i = index" class="col-sm-4">
           <div class="card highlight-card card-small">
-            <p>Day: {{ i+1 }}</p>
+            <p class="heading">Day: {{ i+1 }}</p>
             <p>Temperature: {{ details.main?.temp | number:'1.0-0' }} <sup>o</sup>C</p>
             <p>Sea Level: {{ details.main?.sea_level | number:'1.0-0' }}</p>
           </div>
