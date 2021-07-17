@@ -1,0 +1,38 @@
+
+
+:host .weather-details-wrapper {
+  .header-info {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 25px;
+    h3 {
+      display: inline;
+    }
+    .back-button {
+      display: inline;
+      float: right;
+      background: #1976d2;
+      padding: 5px 15px;
+      color: #fff;
+      box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+  }
+  .weather-items {
+    display: contents;
+    .card {
+      &.highlight-card {
+        background-color: #fff;
+        font-weight: 600;
+        padding: 15px;
+        margin: 10px;
+        text-align: left;
+        box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+      }
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

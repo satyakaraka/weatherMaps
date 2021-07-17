@@ -1,0 +1,19 @@
+<div class="weather-details-wrapper">
+  <div class="container text-center">
+    <div class="header-info">
+      <h3>Weather Details of {{ weatherCityDetails?.name }}, for next 5 days</h3>
+      <span class="back-button" routerLink="" (click)="goBackToHome()">Back to Home</span>
+    </div>      
+    <div class="row">
+      <div class="weather-items" *ngIf="fiveDaysWeatherDetails.length">
+        <div *ngFor="let details of fiveDaysWeatherDetails, let i = index" class="col-sm-4">
+          <div class="card highlight-card card-small">
+            <p>Day: {{ i+1 }}</p>
+            <p>Temperature: {{ details.main?.temp | number:'1.0-0' }} <sup>o</sup>C</p>
+            <p>Sea Level: {{ details.main?.sea_level | number:'1.0-0' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
